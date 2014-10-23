@@ -13,5 +13,6 @@ Dependencies:
 Directory Layout:
   * src - contains source code
   * include - contains headers files
+  * maps - contains map files
   * make - contains makefile for compiling on linux/mac
     * targets - contains compiled source code
