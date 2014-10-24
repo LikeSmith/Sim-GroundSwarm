@@ -4,7 +4,7 @@
  * Description: Class that contains the map of the environment
  */
 
-#include "../include/SwarmSim/Shape.h"
+#include <SwarmSim\Shape.h>
 #include <vector>
 #include <string>
 #include <random>

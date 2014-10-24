@@ -10,6 +10,7 @@
 #include <iostream>
 #include <vector>
 #include <math.h>
+#include <string>
 
 // opencv includes
 #include <opencv2/core/core.hpp>
@@ -18,6 +19,13 @@
 // custom includes
 #include <SwarmSim/Map.h>
 #include <SwarmSim/Robot.h>
+
+// Macros
+#ifndef __CYGWIN__
+#define MAPS_DIR "../../../maps/"
+#else
+#define MAPS_DIR "../maps/"
+#endif
 
 using namespace std;
 using namespace cv;
@@ -34,9 +42,11 @@ int main(int argc, char** argv)
 
 	Mat img;
 	Map m(0.01);
+	string map = MAPS_DIR;
+	map += "example1.map";
 
 	cout << "Loading map..." << endl;
-	m.from_file("../maps/example1.map");
+	m.from_file(map);
 
 	namedWindow("Map");
 

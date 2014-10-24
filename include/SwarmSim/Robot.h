@@ -143,13 +143,13 @@ public:
 	void get_scan(double* out);
 
 	/*
-		 * draw(Mat% I, Scalar color)
-		 * Description: draws robot a specific color
-		 *
-		 * Inputs:
-		 *  I - image to draw robot to
-		 *  color - color to draw robot (optional)
-		 */
+	 * draw(Mat% I, Scalar color)
+	 * Description: draws robot a specific color
+	 *
+	 * Inputs:
+	 *  I - image to draw robot to
+	 *  color - color to draw robot (optional)
+	 */
 	void draw(Mat& I);
 	void draw(Mat& I, Scalar color);
 
